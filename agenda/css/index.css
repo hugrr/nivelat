@@ -22,7 +22,7 @@ body {
 			display: grid;
 		}
 
-		/* a background for the sticky tracks */
+
 		.agenda::after {
 			display: block;
 			content: '';
@@ -38,7 +38,7 @@ body {
 			display: block;
 			padding: 10px 5px 5px;
 			position: sticky;
-			top: 0; /* otherwise seeing a gap above in at least Firefox. */
+			top: 0;
 			z-index: 1000;
 		}
 		.session {
@@ -77,11 +77,7 @@ body {
         [time-1930] 1fr
         [time-2000] 1fr
 
-	 /* Note 1:
-		In this format, gridlines will need to be "named" in 24hr time
 
-		Note 2: Use "auto" instead of "1fr" for a more compact schedule where height of a slot is not proportional to the session length. Implementing a "compact" shortcode attribute might make sense for this!
-	*/
 	;
 	grid-template-columns:
 		[times] 4em
